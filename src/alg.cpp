@@ -12,9 +12,12 @@ double pown(double value, std::int64_t n) {
     return result;
 }
 
-std::int64_t fact(std::int16_t n) {
-    if (n == 0 || n == 1) return 1;
-    else return n * fact(n - 1);
+uint64_t fact(uint16_t n) {
+  if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return n * fact(n - 1);
+  }
 }
 
 double calcItem(double x, std::int16_t n) {
